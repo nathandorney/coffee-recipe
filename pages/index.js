@@ -7,9 +7,12 @@ export default function Home() {
         <h1>V60 Recipe</h1>
         <Guide />
 
-        <a href="https://read.cv/nathan" className="note">
-          Made by @nathan
-        </a>
+        <footer>
+          <p>Enjoy your cup of coffee, happy brewing!</p>
+          <a href="https://read.cv/nathan" className="note">
+            Made by @nathan
+          </a>
+        </footer>
       </div>
     </>
   );
