@@ -1,20 +1,25 @@
 import Link from "next/link";
 import Footer from "../components/Footer";
-import V60Guide from "../components/V60Guide";
 
 export default function Home() {
   return (
     <>
       <div className="layout">
         <header>
-          <h1>V60 Recipe</h1>
+          <h1>Simple Coffee Recipes</h1>
           <p>
-            A simple recipe that'll get you some smooth, well-balanced coffee to
-            kick back with.
+            Recipes that'll get you some smooth, well-balanced coffee to kick
+            back with.
           </p>
+          <ul>
+            <li>
+              <Link href="/how-to-brew-v60">V60</Link>
+            </li>
+            <li>
+              <Link href="/how-to-brew-chemex">Chemex</Link>
+            </li>
+          </ul>
         </header>
-
-        <V60Guide />
 
         <Footer />
       </div>

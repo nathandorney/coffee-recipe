@@ -4,10 +4,10 @@ import { useState } from "react";
 import { Check } from "phosphor-react";
 
 const CoffeeCalculator = () => {
-  const [cupSize, setCupSize] = useState(250);
+  const [cupSize, setCupSize] = useState(255);
   const [numCups, setNumCups] = useState(1);
 
-  const ratio = 3 / 50;
+  const ratio = 1 / 17;
 
   const [waterAmount, setWaterAmount] = useState(cupSize * numCups);
   const [coffeeAmount, setCoffeeAmount] = useState(cupSize * numCups * ratio);
@@ -54,12 +54,12 @@ const CoffeeCalculator = () => {
       <h2>Ingredients:</h2>
       <ul>
         <li>{waterAmount}ml of filtered water</li>
-        <li>{coffeeAmount}g of medium ground coffee</li>
+        <li>{coffeeAmount}g of medium-to-coarse ground coffee</li>
       </ul>
 
       <h2>You will need:</h2>
       <ul>
-        <li>V60</li>
+        <li>Chemex</li>
         <li>Filter paper</li>
         <li>Kettle</li>
         <li>Timer</li>
@@ -75,8 +75,7 @@ const CoffeeCalculator = () => {
             </Checkbox.Indicator>
           </Checkbox.Root>
           <label htmlFor="m1" className="methodLabel">
-            Boil some filtered water and place a filter paper in your V60
-            filter, positioned over a cup.
+            Boil some filtered water and place a filter paper in your chemex.
           </label>
         </li>
 
@@ -88,7 +87,7 @@ const CoffeeCalculator = () => {
           </Checkbox.Root>
           <label htmlFor="m2" className="methodLabel">
             Pour the boiling water over the filter paper to wet the entire
-            paper. Then empty the cup, this gets rid of any paper taste and
+            paper. Then empty the chemex, this gets rid of any paper taste and
             warms up your cup.
           </label>
         </li>
@@ -100,9 +99,9 @@ const CoffeeCalculator = () => {
             </Checkbox.Indicator>
           </Checkbox.Root>
           <label htmlFor="m3" className="methodLabel">
-            Place the cup and V60 on a digital scale. Add {coffeeAmount}g of
-            medium ground coffee to the center of the filter, and reset the
-            scale to 0g.
+            Place the chemex on a digital scale. Add {coffeeAmount}g of
+            medium-to-coarse ground coffee to the center of the filter, and
+            reset the scale to 0g.
           </label>
         </li>
 
@@ -124,8 +123,8 @@ const CoffeeCalculator = () => {
             </Checkbox.Indicator>
           </Checkbox.Root>
           <label htmlFor="m5" className="methodLabel">
-            Keep adding 50g of water every 30 seconds until you reach the final
-            amount of {waterAmount}g.
+            Keep adding increments of water every 30 seconds until you reach the
+            final amount of {waterAmount}g.
           </label>
         </li>
 
@@ -137,7 +136,7 @@ const CoffeeCalculator = () => {
           </Checkbox.Root>
           <label htmlFor="m6" className="methodLabel">
             Give the slurry a gentle swirl and let the coffee filter through
-            completely, this usually takes around 3 and a half minutes total.
+            completely, this usually takes around 4 and a half minutes total.
           </label>
         </li>
       </ol>
