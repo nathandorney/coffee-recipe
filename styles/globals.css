@@ -195,3 +195,10 @@ th {
 .CheckboxRoot[data-state="checked"] .methodLabel {
   opacity: 0.2;
 }
+
+.back {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
