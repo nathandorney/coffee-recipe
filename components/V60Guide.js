@@ -144,7 +144,7 @@ const CoffeeCalculator = () => {
           </Checkbox.Root>
           <label htmlFor="m6" className="methodLabel">
             Give the slurry a gentle swirl and let the coffee filter through
-            completely, usually around 3 and a half minutes.
+            completely, this usually takes around 3 and a half minutes.
           </label>
         </li>
       </ol>
