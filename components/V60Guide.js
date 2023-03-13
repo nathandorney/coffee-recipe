@@ -26,6 +26,14 @@ const CoffeeCalculator = () => {
     setCoffeeAmount((cupSize * newNumCups * ratio).toFixed(1));
   };
 
+  const showWarning =
+    coffeeAmount > 81 ? (
+      <p className="warning">
+        Uh oh! A size 02 V60 is only recommended to brew up to 80g of coffee,
+        you'll struggle to brew more than this.
+      </p>
+    ) : null;
+
   return (
     <form>
       <div className="inputContainer">
@@ -56,6 +64,7 @@ const CoffeeCalculator = () => {
         <li>{waterAmount}ml of filtered water</li>
         <li>{coffeeAmount}g of medium ground coffee</li>
       </ul>
+      {showWarning}
 
       <h2>You will need:</h2>
       <ul>

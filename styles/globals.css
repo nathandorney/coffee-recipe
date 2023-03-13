@@ -10,10 +10,18 @@
   --grey-800: #21232c;
   --grey-900: #0b0c0f;
 
+  --purple-lightest: #f2f0fe;
+  --purple-default: #7b61ff;
+
+  --yellow-lightest: #fff9ed;
+  --yellow-regular: #f0c449;
+  --yellow-darkest: #2c2002;
+
   --border-1: 1px solid hsla(228, 91%, 22%, 0.1);
   --shadow-1: 0px 2px 4px 0px #0000000a, 0px -1px 0px 0px #0000000a inset;
 
   --radii-md: 8px;
+  --radii-sm: 6px;
 }
 
 * {
@@ -83,8 +91,8 @@ input {
 }
 
 input:focus {
-  border: 1px solid #f59e0b;
-  outline: 2px solid #fef3c7;
+  border: 1px solid var(--purple-default);
+  outline: 2px solid var(--purple-lightest);
   border-radius: var(--radii-md);
 }
 
@@ -167,7 +175,7 @@ th {
 }
 
 .CheckboxRoot:focus {
-  box-shadow: 0 0 0 2px #fef3c7;
+  box-shadow: 0 0 0 2px var(--purple-lightest);
 }
 
 .CheckboxRoot[data-state="checked"] {
@@ -201,4 +209,12 @@ th {
   align-items: center;
   gap: 4px;
   margin-bottom: 8px;
+}
+
+.warning {
+  background-color: var(--yellow-lightest);
+  border: 1px solid var(--yellow-regular);
+  border-radius: var(--radii-sm);
+  padding: 0.75rem;
+  color: var(--yellow-darkest);
 }

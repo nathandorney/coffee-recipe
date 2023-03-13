@@ -1,15 +1,19 @@
 import Link from "next/link";
+import Head from "next/head";
 import Footer from "../components/Footer";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Simple Coffee Guides</title>
+      </Head>
       <div className="layout">
         <header>
-          <h1>Simple Coffee Recipes</h1>
+          <h1>Simple Coffee Guides</h1>
           <p>
-            Recipes that'll get you some smooth, well-balanced coffee to kick
-            back with.
+            A collection of guides that'll get you some smooth, well-balanced
+            coffee to kick back with.
           </p>
           <ul>
             <li>

@@ -26,6 +26,14 @@ const CoffeeCalculator = () => {
     setCoffeeAmount((cupSize * newNumCups * ratio).toFixed(1));
   };
 
+  const showWarning =
+    waterAmount > 1851 ? (
+      <p className="warning">
+        Uh oh, the largest Chemex can only brew up to 1850ml, you'll struggle to
+        brew more than this.
+      </p>
+    ) : null;
+
   return (
     <form>
       <div className="inputContainer">
@@ -35,7 +43,7 @@ const CoffeeCalculator = () => {
           type="number"
           value={numCups}
           onChange={handleNumCupsChange}
-          max={8}
+          max={13}
           min={1}
         />
       </div>
@@ -56,6 +64,7 @@ const CoffeeCalculator = () => {
         <li>{waterAmount}ml of filtered water</li>
         <li>{coffeeAmount}g of medium-to-coarse ground coffee</li>
       </ul>
+      {showWarning}
 
       <h2>You will need:</h2>
       <ul>
