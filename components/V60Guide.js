@@ -133,8 +133,8 @@ const CoffeeCalculator = () => {
             </Checkbox.Indicator>
           </Checkbox.Root>
           <label htmlFor="m5" className="methodLabel">
-            Keep adding 50g of water every 30 seconds until you reach the final
-            amount of {waterAmount}g.
+            Keep adding steady increments of water every 30 seconds until you
+            reach the final amount of {waterAmount}g.
           </label>
         </li>
 
